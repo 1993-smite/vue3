@@ -4,13 +4,25 @@ components, and any things in vue
 Идея матрешки:
 
 - блок с выбором юзеров
-    
-    <people :users='users'>
-      <select title='header' :model='user'/>
-    </people>
+    ```html
+      <peoples v-bind:users="sources">
+
+        <template v-slot:th-before>
+          <vth v-bind:title="Check">
+          </vth>
+        </template>
+
+        <template v-slot:td-before='props'>
+          <vtd v-bind:item='props'>
+          </vtd>
+        </template>
+
+      </peoples>
+    ```
 
 - блок с отрисовкой юзеров
-    
-    <people :users='users'>
-    </people>
->>>>>>> c66c1baf42f7080745d59419f556131e1cdebcc2
+    ```html
+      <peoples v-bind:users="sources">
+
+      </peoples>
+    ```
