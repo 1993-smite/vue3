@@ -1,4 +1,4 @@
-import { createWebHistory, createRouter } from "vue-router";
+import { createWebHistory, createRouter } from 'vue-router';
 //import VueRouter from 'vue-router'
 
 import Test from '@/components/Test.vue'
