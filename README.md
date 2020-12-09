@@ -1,24 +1,16 @@
-# vue3
+components, and any things in vue
 
-## Project setup
-```
-npm install
-```
+Пробуем идею множественных компонентов.
+Идея матрешки:
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+- блок с выбором юзеров
+    
+    <people :users='users'>
+      <select title='header' :model='user'/>
+    </people>
 
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+- блок с отрисовкой юзеров
+    
+    <people :users='users'>
+    </people>
+>>>>>>> c66c1baf42f7080745d59419f556131e1cdebcc2
