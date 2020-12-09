@@ -7,14 +7,6 @@
       </template>
 
       <template v-slot:td-before='props'>
-        <!-- <td> 
-            <input type="checkbox"
-                    class="filled-in"
-                    v-model='props.model.check'
-                    v-on:click='check(props.model)'
-                    value="fff"
-                />
-        </td> -->
         <vtd v-bind:item='props'>
         </vtd>
       </template>
