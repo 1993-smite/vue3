@@ -5,10 +5,12 @@ components, and any things in vue
 Идея матрешки:
 
 - блок с выбором юзеров
-<people :users='users'>
-  <select title='header' :model='user'/>
-</people>
+    
+    <people :users='users'>
+      <select title='header' :model='user'/>
+    </people>
 
 - блок с отрисовкой юзеров
-<people :users='users'>
-</people>
+    
+    <people :users='users'>
+    </people>
