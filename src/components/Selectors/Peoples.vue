@@ -4,9 +4,11 @@
             <tr>
                 <slot name="th-before">
                 </slot>
+
                 <th>Name</th>
                 <th>Country</th>
                 <th>Position</th>
+                
                 <slot name="th-post">
                 </slot>
             </tr>

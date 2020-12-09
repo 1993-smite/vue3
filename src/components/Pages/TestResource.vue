@@ -1,26 +1,29 @@
 <template>
+    <h1>
+        Резерв
+    </h1>
     <div class="row">
       <div class="col s6">
-        <select-people v-bind:sources="users">
-        </select-people>
+        <Resource v-bind:sources="users">
+        </Resource>
       </div>
       <div class="col s6">
-        <peoples v-bind:users="getChecked">
+        <peoples v-bind:users="getReserved">
         </peoples>
       </div>
     </div>
 </template>
 
 <script>
-import SelectPeople from './Selectors/SelectPeople.vue'
-import Peoples from './Selectors/Peoples.vue'
+import Resource from './../Resources/Resource'
+import Peoples from './../Selectors/Peoples.vue'
 
 export default {
-  components: { SelectPeople, Peoples },
-  name: 'TestCheck',
+  components: { Resource, Peoples },
+  name: 'TestResource',
   computed: {
-    getChecked: function(){
-      return this.users.filter(x=>x.check);
+    getReserved: function(){
+      return this.users.filter(x=>x.reserve);
     }
   },
   data: ()=>{
@@ -51,7 +54,7 @@ export default {
         position: 'General'
       }
     ]
-    users.forEach(x=>x.check = false)
+    users.forEach(x=>x.reserve = false)
     return {
       users
     };

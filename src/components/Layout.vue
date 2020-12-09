@@ -1,12 +1,21 @@
 <template>
-    <v-app>
-        <router-link to="/">Home </router-link> 
-        <router-link to="/test">Test </router-link> 
-        <router-link to="/test1">Test1</router-link>
-        <router-link to="/test-check">Resource</router-link>
+    <div>
+
+        <nav>
+            <div class="nav-wrapper">
+            <a href="#" class="brand-logo right">Logo</a>
+            <ul id="nav-mobile" class="left hide-on-med-and-down">
+                <li><router-link to="/">Home </router-link> </li>
+                <li><router-link to="/test">Test </router-link></li>
+                <li><router-link to="/test1">Test1</router-link></li>
+                <li><a href="/test-check">Select</a></li>
+                <li><a href="/test-reserve">Resource</a></li>
+            </ul>
+            </div>
+        </nav>
 
         <router-view></router-view>
-    </v-app>
+    </div>
 </template>
 
 <script>

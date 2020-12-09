@@ -1,9 +1,10 @@
 import { createWebHistory, createRouter } from 'vue-router';
 //import VueRouter from 'vue-router'
 
-import Test from '@/components/Test.vue'
-import Test1 from '@/components/Test1.vue'
-import TestCheck from '@/components/TestCheck.vue'
+import Test from '@/components/Pages/Test.vue'
+import Test1 from '@/components/Pages/Test1.vue'
+import TestCheck from '@/components/Pages/TestCheck.vue'
+import TestResource from '@/components/Pages/TestResource.vue'
 
 const routes = [
     {
@@ -17,6 +18,10 @@ const routes = [
     {
         path: "/test-check",
         component: TestCheck
+    },
+    {
+        path: "/test-reserve",
+        component: TestResource
     },
 ];
 

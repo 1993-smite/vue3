@@ -16,7 +16,6 @@ export default {
     item: Object
   },
   data: function(){
-    console.log(this.item);
     let model = this.item;
     return {
       ...model
