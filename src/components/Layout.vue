@@ -10,6 +10,7 @@
                 <li><router-link to="/test1">Test1</router-link></li>
                 <li><a href="/test-check">Select</a></li>
                 <li><a href="/test-reserve">Resource</a></li>
+                <li><a href="/test-crud">CRUD</a></li>
             </ul>
             </div>
         </nav>

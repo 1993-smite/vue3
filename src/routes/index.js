@@ -5,6 +5,7 @@ import Test from '@/components/Pages/Test.vue'
 import Test1 from '@/components/Pages/Test1.vue'
 import TestCheck from '@/components/Pages/TestCheck.vue'
 import TestResource from '@/components/Pages/TestResource.vue'
+import TestCRUD from '@/components/Pages/TestCRUD.vue'
 
 const routes = [
     {
@@ -22,6 +23,10 @@ const routes = [
     {
         path: "/test-reserve",
         component: TestResource
+    },
+    {
+        path: "/test-crud",
+        component: TestCRUD
     },
 ];
 
